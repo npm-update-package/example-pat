@@ -18,4 +18,4 @@ jobs:
         env:
           GIT_USER_EMAIL: 20086673+munierujp@users.noreply.github.com
           GIT_USER_NAME: munierujp
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
