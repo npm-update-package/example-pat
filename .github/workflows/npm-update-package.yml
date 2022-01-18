@@ -1,0 +1,21 @@
+name: npm-update-package
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+jobs:
+  npm-update-package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '12.20.2'
+      - run: |
+          git config user.name $GIT_USER_NAME
+          git config user.email $GIT_USER_EMAIL
+          npx npm-update-package --github-token $GITHUB_TOKEN
+        env:
+          GIT_USER_EMAIL: 20086673+munierujp@users.noreply.github.com
+          GIT_USER_NAME: munierujp
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
