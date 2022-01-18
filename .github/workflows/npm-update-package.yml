@@ -16,6 +16,6 @@ jobs:
           git config user.email $GIT_USER_EMAIL
           npx npm-update-package --github-token $GITHUB_TOKEN
         env:
-          GIT_USER_EMAIL: 20086673+munierujp@users.noreply.github.com
-          GIT_USER_NAME: munierujp
+          GIT_USER_EMAIL: 97961304+npm-update-package-bot@users.noreply.github.com
+          GIT_USER_NAME: npm-update-package-bot
           GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
