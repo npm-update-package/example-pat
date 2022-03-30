@@ -12,9 +12,10 @@ jobs:
         with:
           node-version: '12.20.2'
       - run: |
-          git config user.name $GIT_USER_NAME
-          git config user.email $GIT_USER_EMAIL
-          npx npm-update-package --github-token $GITHUB_TOKEN
+          npx npm-update-package \
+            --github-token $GITHUB_TOKEN \
+            --git-user-name $GIT_USER_NAME \
+            --git-user-email $GIT_USER_EMAIL
         env:
           GIT_USER_EMAIL: 97961304+npm-update-package-bot@users.noreply.github.com
           GIT_USER_NAME: npm-update-package-bot
