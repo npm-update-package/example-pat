@@ -16,7 +16,7 @@
     "node": "12.20.2"
   },
   "devDependencies": {
-    "@jest/types": "27.4.2",
+    "@jest/types": "28.0.2",
     "@tsconfig/node12": "1.0.9",
     "@types/jest": "27.4.1",
     "@types/node": "12.20.15",
