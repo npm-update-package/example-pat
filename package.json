@@ -15,6 +15,9 @@
   "engines": {
     "node": "16.11.1"
   },
+  "dependencies": {
+    "undici": "5.7.0"
+  },
   "devDependencies": {
     "@jest/types": "27.4.2",
     "@tsconfig/node16": "1.0.3",
